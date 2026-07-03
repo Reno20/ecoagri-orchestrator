@@ -1,0 +1,36 @@
+EcoAgri-Orchestrator Demo / Presentation Script
+===============================================
+Spoken Time: ~3.5 Minutes
+Target Audience: Judges / Evaluators / General Public
+
+[SLIDE 1: Cover Banner - "EcoAgri-Orchestrator: Ecological Advisory & Market Linkage"]
+"Hello everyone. Today, I am proud to present the EcoAgri-Orchestrator. This is a multi-agent system built on the Google Agent Development Kit 2.0 framework, designed to solve a critical ecological and economic challenge in Kerala, India, surrounding Sasthamcotta Lake."
+
+[SLIDE 2: The Problem - "The Sasthamcotta Lake Crisis"]
+"Sasthamcotta Lake is a Ramsar wetland of international importance and the primary drinking water source for over 700,000 residents in the Kollam district. Unfortunately, the lake is shrinking rapidly due to agricultural encroachment. Siltation from aggressive tapioca farming on slopes, agrochemical waste from cashew and coconut plantations, and chemical runoff from rubber processing are threatening this vital water source. At the same time, local smallholder farmers struggle with opaque intermediary networks and poor price discovery. The EcoAgri-Orchestrator bridges this gap by aligning environmental conservation with financial incentives."
+
+[SLIDE 3: System Architecture - "ADK 2.0 Workflow Graph"]
+"Rather than using a single, monolithic LLM prompt, we built a deterministic multi-agent workflow graph. The execution flow begins when a farmer submits a query. 
+
+First, the deterministic Triage Router classifies the query into either the ecological or direct market pathway.
+
+Second, the query passes through our Security Checkpoint. This is a crucial STRIDE-mode gate that performs:
+1. PII Redaction: Automatically scrubbing Aadhaar numbers, phone numbers, emails, GPS coordinates, and bank details using optimized regular expressions.
+2. Prompt Injection Detection: Keyword-based scanning that deflects attacks to a security block page.
+3. Structured JSON Logging: Recording all security events with INFO, WARNING, or CRITICAL severities for robust audit trails."
+
+[SLIDE 4: The Ecological Pipeline - "Geo-Spatial & Agronomy Advice"]
+"If a farmer asks about crop degradation or erosion, the query takes the Ecological pathway. 
+
+First, the Geo-Spatial Analyst LLM Agent queries a local FastMCP server to determine the farm's exact location relative to the Sasthamcotta watershed. 
+
+Next, the Eco-Agronomist Agent evaluates the current farming practices. It generates specific, localized crop recommendations—for example, replacing soil-weakening tapioca with vetiver grass barriers or Nendran bananas—and calculates an ecological compliance score."
+
+[SLIDE 5: Human-in-the-Loop Gate - "Sustainable practice commitment"]
+"To connect the farmer with direct wholesale buyers, we require a commitment to sustainable farming. The workflow utilizes the ADK Consent Gate—a Human-in-the-Loop node decorated with 'rerun_on_resume=True'. The execution pauses, displays the agronomic recommendations, and demands explicit farmer consent. Only when the farmer types 'yes' does the gate resume and route the flow to the Market Broker."
+
+[SLIDE 6: Market Linkage - "Decentralized Price Discovery"]
+"Once consent is obtained, the Market Broker LLM Agent queries live commodity prices using the MCP server. It connects the farmer directly with wholesale buyers in Kollam like MARKETFED and the Spices Board of India, bypassing exploitative middlemen. It also highlights certifications needed to fetch premium organic pricing."
+
+[SLIDE 7: Conclusion & Impact]
+"The EcoAgri-Orchestrator proves that agentic workflows can drive social and environmental good. It secures the drinking water source of 700,000 people, mitigates soil erosion, and increases smallholder farmer incomes by direct market placement. Thank you, and I am happy to take any questions."
