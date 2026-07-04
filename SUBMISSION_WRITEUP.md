@@ -4,6 +4,7 @@
 - **Track:** Agents for Good (with Agents for Business integration)
 - **Target Region:** Sasthamcotta Lake Watershed, Kerala, India
 - **Built With:** Google ADK 2.0 (Workflow Graph API), FastMCP, Python 3.12, Gemini 2.5/3.5
+- **Video Demo Link:** https://youtu.be/bKsTavxQzkw
 
 ---
 
